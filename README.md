@@ -1,0 +1,1 @@
+this is the documentation for me working on fourier series
