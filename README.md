@@ -11,19 +11,19 @@
 ---
 
 ## **About**
-Provide a brief overview of your project. Explain its purpose and what problem it solves.
+In this project, I am attempting to take a audio sample, and transcribe it into piano notes. This will allow me free access to my favourite piano songs just by getting an audio sample of them.
 
 Example:
-> This project is a tool for analyzing audio files to detect musical notes. It uses FFT and machine learning to provide an accurate transcription of audio into piano notes.
+If I download a song from youtube, I can run it through the program and get a out a music sheet or something of the like to help me learn the play the song on piano.
 
 ---
 
-## **Features**
-List the main features of your project.
-
-- Feature 1: Analyze stereo or mono audio files.
-- Feature 2: Generate piano note transcriptions from audio.
-- Feature 3: Save transcriptions in MIDI or text format.
+## **Inner Workings**
+The program that I wrote works as follows:
+- first I will read in the audio file as a .wav file
+- using fourier transformations, we will decompose the audio file
+- using the decomposed files at a frame length of 0.1 seconds, I will assign note(s) to each segment
+- then we will convert the assigned notes into midi
 
 ---
 
